@@ -9,7 +9,9 @@ html {
 }
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #0A0A0A;
     background-color: #FCFAF6;
     height: 100%;
@@ -45,20 +47,31 @@ nav{
 
 
 .nav-ul {
-    display: flex;
+    display: inline-flex;
     margin: 20px;
     align-items: center;
+    justify-content: center;    
 }
 
 .nav-li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
     margin-left: 53px;
     font-size: 16px;
-    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 a {
     text-decoration: none;
     color: #0A0A0A;
+}
+
+.nav-li:hover {
+    color: #FCFAF6;
+    background-color: #0A0A0A;
 }
 
 li {
@@ -68,13 +81,13 @@ li {
 
 
 h1 {
-    font-family: "Inter", sans-serif;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
     font-weight: 800;
     font-size: 25px;
 }
 
 h2 {
-    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 }
 
 .center-img {
@@ -126,7 +139,7 @@ h2 {
     bottom: 45px;
     right: 100px;
     z-index: 2;
-    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
     font-size: 23px;
     font-weight: 800;
     padding: 30px 70px;
@@ -155,13 +168,13 @@ h2 {
     width: 20px;
 }
 
-.character-design h1 {
+.bts-container h1 {
     text-align: center;
     margin-top: 70px;
     font-size: 30px;
-    margin-bottom: 62px;
+    margin-bottom: 10px;
 }
 
-.character-design img {
+.bts-container img {
     margin-bottom: 20px;
 }
