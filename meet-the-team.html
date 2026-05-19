@@ -16,8 +16,63 @@
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/9ea3e41a62.js" crossorigin="anonymous"></script>
 
+    <style>
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+    
+        body {
+          font-family: Arial, sans-serif;
+        }
+    
+        /* First section */
+        #hero {
+          height: 100vh;
+          background: lightblue;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 3rem;
+        }
+    
+        /* Navbar */
+        nav {
+          position: fixed;
+          top: -100px;
+          left: 0;
+          width: 100%;
+          padding: 20px;
+          background: black;
+          color: white;
+          transition: top 0.3s ease;
+          z-index: 1000;
+        }
+    
+        /* Show navbar after scrolling */
+        nav.show {
+          top: 0;
+        }
+    
+        /* Extra content */
+        .content {
+          height: 200vh;
+          padding: 50px;
+          background: #f5f5f5;
+        }
+
+    </style>
+    
+
 </head>
 <body>
+
+    <div id="meettheteam-hero">
+        hero section
+
+    </div>
 
     <nav class="navbar">
         <div class="nav-container">
@@ -40,65 +95,24 @@
 
     <main>
 
-        <div class="hero">
-            <div class="bg-video-wrapper">
-                <video autoplay muted loop playsinline class="bg-video">
-                    <source src="vid/snippet.mp4" type="video/mp4">
-                </video>
-                <div class="header-title-wrapper">
-                    <img src="img/palceholder-title-logo.png" alt="" class="header-logo">
-                    <button class="header-button">WATCH NOW</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-section">
-            <h1>BEHIND THE SCENES</h1>
-            <img src="img/arrow-down.png" alt="" class="arrow-down">
-        </div>
-
-        <div class="bts-container">
-            <div class="bts-title-container">
-                <h1>CHARACTER DESIGN</h1>
-                <img src="img/arrow-right.png" alt="">
-            </div>
-
-            <img src="img/placeholder.png" alt="" class="center-img">
-            <img src="img/placeholder.png" alt="" class="center-img">
-        </div>
-        
-        <div class="bts-container">
-            <div class="bts-title-container">
-                <h1>BACKGROUNDS</h1>
-                <img src="img/arrow-right.png" alt="">
-            </div>
-
-            <img src="img/placeholder.png" alt="" class="center-img">
-            <img src="img/placeholder.png" alt="" class="center-img">
-        </div>
-
-        <div class="bts-container">
-            <div class="bts-title-container">
-                <h1>ANIMATION</h1>
-                <img src="img/arrow-right.png" alt="">
-            </div>
-
-            <img src="img/placeholder.png" alt="" class="center-img">
-            <img src="img/placeholder.png" alt="" class="center-img">
-        </div>
-
-        <div class="bts-container">
-            <a href="">
-                <div class="bts-title-container">
-                    <h1>MEET THE TEAM</h1>
-                    <img src="img/arrow-right.png" alt="">
-                </div>
-                <img src="img/placeholder.png" alt="" class="center-img">
-            </a>
-            
+        <div class="meettheteam-content">
+            scroll down to see the navbar appear
         </div>
 
     </main>
+
+    <script>
+        const navbar = document.getElementById("navbar");
+        const hero = document.getElementById("hero");
+    
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > hero.offsetHeight) {
+            navbar.classList.add("show");
+          } else {
+            navbar.classList.remove("show");
+          }
+        });
+      </script>
 
 </body>
 </html>
