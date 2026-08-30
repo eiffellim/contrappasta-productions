@@ -24,6 +24,44 @@ main {
     min-height: 100vh;
 }
 
+h1 {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    margin: 0;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 20px 50px;
+    border: solid 2px #121113;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    color: #FCFAF6;
+    background-color: #121113;
+}
+
+/* NAV BAR */
+
 nav{
     max-width: 2500px;
     margin: 0 auto;
@@ -92,16 +130,7 @@ li {
 }
 
 
-h1 {
-    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-    font-weight: 800;
-    font-size: 25px;
-    margin: 0;
-}
 
-h2 {
-    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-}
 
 .center-img {
     display: block;
@@ -187,3 +216,27 @@ h2 {
     text-align: center;
     margin: 250px;
 }
+
+/* SYNOPSIS */
+
+.synopsis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.synopsis-text {
+    text-align: center;
+    width: 530px;
+}
+
+
+.synopsis-text h1, h2 {
+    margin-bottom: 15px;
+}
+
+.synopsis-text p {
+    margin-bottom: 60px;
+}
+
