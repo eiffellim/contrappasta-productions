@@ -22,7 +22,6 @@ main {
     margin: 0 auto;
     max-width: 2000px;
     min-height: 100vh;
-    background-color: aqua;
 }
 
 nav{
@@ -139,12 +138,18 @@ h2 {
     );
 }
 
+/* HEADER CONTENTS */
+
 .header-logo {
     position: absolute;
     bottom: 65px;
     width: 45%;
     left: 100px;
     z-index: 2;
+}
+
+.header-title-wrapper {
+
 }
 
 .header-button {
@@ -161,36 +166,3 @@ h2 {
     background-color: #FCFAF6;
 }
 
-.hero {
-    height: 90vh;
-}
-
-.content-section {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 150px;
-}
-
-.content-section h1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.arrow-down {
-    width: 20px;
-}
-
-.bts-container {
-    margin-bottom: 150px;
-}
-
-.bts-title-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
