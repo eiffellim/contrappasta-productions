@@ -249,6 +249,10 @@ li {
 
 /* FILM INFO */
 
+.film-info {
+    margin-bottom: 150px;
+}
+
 .film-info img {
     width: 1110px;
 }
@@ -271,3 +275,6 @@ li {
     font-size: 20px;
     margin-bottom: -5px;
 }
+
+/* DIRECTOR'S STATEMENT */
+
