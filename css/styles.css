@@ -349,3 +349,72 @@ li {
     width: 100%;
     height: auto;
 }
+
+.meettheteam-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 610px;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 140px;
+}
+
+.meettheteam-content img {
+    width: 337px;
+}
+
+.meettheteam-content p {
+    font-family: "Mansalva", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FCFAF6;
+    text-align: center;
+    width: 460px;
+}
+
+.meettheteam-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mei {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 16px;
+    margin-bottom: 80px;
+}
+
+.mei img {
+    width: 35px;
+    margin: 0 auto;
+}
+
+.mei p {
+    margin: 0;
+    text-align: left;
+    width: 54px;
+}
+
+.meettheteam-text button {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    padding: 20px 50px;
+    border-radius: 10px;
+    border: solid 2px #FCFAF6;
+    background: transparent;
+    color: #FCFAF6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.meettheteam-text button:hover {
+    color: #121113;
+    background-color: #FCFAF6;
+}
