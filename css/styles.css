@@ -281,20 +281,23 @@ li {
 .director-statement {
     position: relative;
     width: 100%;
-    height: 100%;
     overflow: hidden;
 }
 
 .director-statement img {
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
 }
 
 .directorstat-content {
     position: absolute;
     top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 610px;
     z-index: 2;
+    text-align: center;
 }
 
 .directorstat-content h1 {
@@ -304,12 +307,31 @@ li {
     margin-bottom: 10px;
 }
 
+.directorstat-content h3 {
+    color: #BBBBBB;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
 .directorstat-content p {
     font-family: "Mansalva", sans-serif;
     font-weight: 400;
     font-size: 25px;
     color: #FCFAF6;
     text-align: center;
-    margin-right: 415px;
-    margin-left: 415px;
 }
+
+.director-statement .ds-icon {
+    width: 100px;
+    margin-left: 580px;
+    rotate: -15.58deg;
+}
+
+.director-statement .mei-signature {
+    width: 340px;
+    display: block;
+    margin: 0px 110px;
+}
+
