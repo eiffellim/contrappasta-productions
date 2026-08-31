@@ -336,4 +336,16 @@ li {
 }
 
 
-/*  */
+/* MEET THE TEAM */
+
+.meet-the-team {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.meet-the-team img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
