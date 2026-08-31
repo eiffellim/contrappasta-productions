@@ -278,3 +278,38 @@ li {
 
 /* DIRECTOR'S STATEMENT */
 
+.director-statement {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.director-statement img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.directorstat-content {
+    position: absolute;
+    top: 150px;
+    z-index: 2;
+}
+
+.directorstat-content h1 {
+    color: #FCFAF6;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.directorstat-content p {
+    font-family: "Mansalva", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FCFAF6;
+    text-align: center;
+    margin-right: 415px;
+    margin-left: 415px;
+}
