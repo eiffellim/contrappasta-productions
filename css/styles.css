@@ -428,9 +428,10 @@ li {
 /* GET IN TOUCH */
 
 .getintouch {
-    margin: 0px 300px 310px 200px;
+    margin: 0px 300px 200px 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap:80px;
     align-items: center;
 }
 
@@ -479,6 +480,10 @@ li {
     width: 86px;
     margin-bottom: 220px;
     rotate: 6.18deg;
+}
+
+.getintouch-info {
+    margin-top: 80px;
 }
 
 .getintouch-info div {
