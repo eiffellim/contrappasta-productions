@@ -25,8 +25,8 @@ main {
 }
 
 h1 {
-    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-    font-weight: 800;
+    font-family: "arial-rounded-mt-pro", sans-serif;
+    font-weight: 700;
     font-size: 50px;
     margin: 0;
 }
@@ -38,7 +38,7 @@ h2 {
     margin: 0;
 }
 
-h3 {
+h3, h4 {
     margin: 0;
 }
 
@@ -409,7 +409,7 @@ li {
 }
 
 .meettheteam-text button {
-    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-family: "Arial Rounded MT Bold", sans-serif;
     font-size: 35px;
     font-weight: 100;
     padding: 20px 50px;
@@ -423,4 +423,60 @@ li {
 .meettheteam-text button:hover {
     color: #121113;
     background-color: #FCFAF6;
+}
+
+/* GET IN TOUCH */
+
+.getintouch {
+    margin: 0px 300px 310px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.getintouch h1 {
+    font-size: 66px;
+}
+
+.getintouch h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #ADA6A1;
+}
+
+.getintouch h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.getintouch h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    color: #ADA6A1;
+}
+
+.getintouch p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.getintouch-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.getintouch-title img {
+    width: 86px;
+    margin-bottom: 220px;
+    rotate: 6.18deg;
+}
+
+
+.getintouch-info div {
+    margin-bottom: 75px;
 }
