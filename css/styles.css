@@ -524,7 +524,7 @@ li {
 
 footer {
     background-color: #121113;
-    padding: 100px 150px 100px 150px;
+    padding: 100px 150px 30px 150px;
     display: flex;
     justify-content: space-between;
     align-items: start;
