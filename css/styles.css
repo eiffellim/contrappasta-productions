@@ -464,6 +464,11 @@ li {
     font-size: 25px;
 }
 
+.getintouch p:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 .getintouch-title {
     display: flex;
     align-items: center;
@@ -476,7 +481,40 @@ li {
     rotate: 6.18deg;
 }
 
-
 .getintouch-info div {
     margin-bottom: 75px;
+}
+
+.copy-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+/* Underline on hover */
+.copy-wrapper:hover p {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Copy icon - hidden by default */
+.copy-wrapper .copy-icon {
+    width: 22px;
+    height: 22px;
+    opacity: 0;
+    transform: translateX(-5px) scale(0.8);
+    transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    pointer-events: none; /* Prevents icon from blocking clicks */
+    filter: brightness(0.4);
+}
+
+/* Show icon on hover */
+.copy-wrapper:hover .copy-icon {
+    opacity: 1;
+    transform: translateX(0) scale(1);
 }
