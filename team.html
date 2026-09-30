@@ -8,111 +8,135 @@
     <!-- CSS LINK -->
     <link rel="stylesheet" href="css/styles.css">
 
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="./img/cont-prod_icon.png">
+
     <!-- FONT LINK -->
+    <link rel="stylesheet" href="https://use.typekit.net/hyx2rqv.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/9ea3e41a62.js" crossorigin="anonymous"></script>
 
-    <style>
+    <!-- JS -->
+    <!-- FADE IN -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script defer src="js/gsapFadeIn.js"></script>
 
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-    
-        body {
-          font-family: Arial, sans-serif;
-        }
-    
-        /* First section */
-        #hero {
-          height: 100vh;
-          background: lightblue;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 3rem;
-        }
-    
-        /* Navbar */
-        nav {
-          position: fixed;
-          top: -100px;
-          left: 0;
-          width: 100%;
-          padding: 20px;
-          background: black;
-          color: white;
-          transition: top 0.3s ease;
-          z-index: 1000;
-        }
-    
-        /* Show navbar after scrolling */
-        nav.show {
-          top: 0;
-        }
-    
-        /* Extra content */
-        .content {
-          height: 200vh;
-          padding: 50px;
-          background: #f5f5f5;
-        }
-
-    </style>
-    
+    <!-- COPY TEXT -->
+    <script defer src="js/copytext.js"></script>
 
 </head>
-<body>
 
-    <div id="meettheteam-hero">
-        hero section
+<body>
+  <!-- NAV BAR -->
+  <nav class="navbar">
+      <div class="nav-container">
+          <a href="index.html"><img src="img/contprod_primarylogo.png" alt=""></a>
+
+          <div>
+              <ul class="nav-ul">
+                  <a href="">
+                      <li class="nav-li">Home</li>
+                  </a>
+                  <a href="team.html">
+                      <li class="nav-li-current">Team</li>
+                  </a>
+                  <a href="">
+                      <li class="nav-li">Gallery</li>
+                  </a>
+                  <a href="about-us.html">
+                      <li class="nav-li">About Us</li>
+                  </a>
+                  <a href="the-exp.html">
+                      <li class="nav-li">Contacts</li>
+                  </a>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- MAIN -->
+
+  <main>
+
+    <div class="meettheteam">
+
+      <h1>MEET THE TEAM</h1>
+
+      <img src="img/mcs-char-lineup.png" alt="" class="mcs-char-lineup">
+
+    </div>
+    
+    <div class="team-content">
+      
+      <div class="team-categories">
+
+        <div>
+          <img src="img/team-icon-s.png" alt="">
+          <h4>DIRECTING</h4>
+        </div>
+
+      </div>
 
     </div>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html"><img src="img/primary-logo.png" alt=""></a>
-            <div>
-                <ul class="nav-ul">
-                    <a href="">
-                        <li class="nav-li">Work</li>
-                    </a>
-                    <a href="about-us.html">
-                        <li class="nav-li">About</li>
-                    </a>
-                    <a href="the-exp.html">
-                        <li class="nav-li">Contact</li>
-                    </a>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  </main>
 
-    <main>
+  <!-- FOOTER -->
+  <footer>
+      <div>
 
-        <div class="meettheteam-content">
-            scroll down to see the navbar appear
-        </div>
+          <img src="img/eotm_logo.png" alt="" class="footer-logo">
 
-    </main>
+          <div class="copyright">
+              <img src="img/copyright-logo.png" alt="">
+              <p>Contrappasta Productions 2026</p>
+          </div>
 
-    <script>
-        const navbar = document.getElementById("navbar");
-        const hero = document.getElementById("hero");
-    
-        window.addEventListener("scroll", () => {
-          if (window.scrollY > hero.offsetHeight) {
-            navbar.classList.add("show");
-          } else {
-            navbar.classList.remove("show");
-          }
-        });
-      </script>
+      </div>
+
+      <div class="links-wrapper">
+
+          <div class="footer-links">
+              <div>
+                  <h3>SOCIAL</h3>
+                  <img src="img/navfooter-line.png" alt="">
+              </div>
+
+              <ul>
+                  <li><a href="">YouTube</a></li>
+                  <li><a href="https://www.instagram.com/contrappastaproductions/?hl=en" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                  <li><a href="">LinkedIn</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-links">
+              <div>
+                  <h3>NAVIGATION</h3>
+                  <img src="img/navfooter-line.png" alt="">
+              </div>
+
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="">Team</a></li>
+                  <li><a href="">Gallery</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Contacts</a></li>
+              </ul>
+             
+          </div>
+
+      </div>
+  </footer>
 
 </body>
 </html>
