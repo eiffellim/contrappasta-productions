@@ -549,7 +549,7 @@ li {
 .team-nav {
     width: 500px;
     flex-shrink: 0;
-    padding: 140px 110px 300px 110px;
+    padding: 140px 110px 300px;
 
 }
 
@@ -558,7 +558,7 @@ li {
     display: flex;
     align-items: center;
     padding: 10px 0;
-    color: #111;
+    color: #121113;
     text-decoration: none;
     font-family: "Arial Rounded MT Bold", sans-serif;
     font-size: 18px;
@@ -567,57 +567,36 @@ li {
 .teamnav-item .teamnav-icon {
     position: absolute;
     left: 0;
-    width: 22px;
-    height: 22px;
+    width: 26px;
     object-fit: contain;
+    margin-bottom: 8px;
     opacity: 0;
     transform: translateX(-8px);
+    pointer-events: none;
     transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.teamnav-item:hover > .teamnav-icon {
+    opacity: 0.5;
+    transform: translateX(0);
 }
 
 .teamnav-item .teamnav-label {
     display: inline-block;
+    transform: translateX(0);
     transition: transform 0.25s ease;
 }
 
-.teamnav-item:hover .teamnav-link:not(.teamnav-link--plain) .teamnav-label {
-    transform: translateX(34px);
-}
-
-.teamnav-item:hover .teamnav-link:not(.teamnav-link--plain) .teamnav-icon {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.teamnav-item:hover > .teamnav-icon {
-    opacity: 1;
-    transform: translateX(0);
-}
-
 .teamnav-item:hover > .teamnav-label {
-    transform: translateX(34px);
+    transform: translateX(36px);
 }
-
-
-.teamnav-dropdown:hover > .teamnav-link .teamnav-label {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-
-.teamnav-link:hover .teamnav-label {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-
 
 .teamnav-dropdown .teamnav-label {
     white-space: nowrap;
 }
 
-
-
-.teamnav-link--plain .teamnav-label {
-    transform: none !important;
+.teamnav-dropdown {
+    flex-wrap: wrap;
 }
 
 .teamnav-sub {
@@ -627,13 +606,28 @@ li {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.25s ease;
+    transition: max-height 0.5s ease, opacity 0.4s ease;
 }
+
+.teamnav-subitem:first-child {
+    padding-top: 20px;   /* 8px normal + 16px gap */
+}
+
 
 .teamnav-dropdown.open .teamnav-sub {
     max-height: 140px;
     opacity: 1;
 }
+
+.teamnav-dropdown.open .teamnav-chevron {
+    transform: rotate(90deg);
+}
+
+.teamnav-link:hover > .teamnav-label, .teamnav-dropdown.open > .teamnav-link .teamnav-label {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 
 .teamnav-subitem {
     position: relative;
@@ -648,12 +642,12 @@ li {
 .teamnav-subitem .teamnav-icon {
     position: absolute;
     left: 34px;
-    width: 18px;
-    height: 18px;
+    width: 26px;
+    margin-bottom: 8px;
     object-fit: contain;
     opacity: 0;
     transform: translateX(-8px);
-    transition: opacity 0.25s ease, transform 0.25s ease;
+    transition: opacity 0.25s ease , transform 0.25s ease;
 }
 
 .teamnav-subitem .teamnav-label {
@@ -661,13 +655,15 @@ li {
     transition: transform 0.25s ease;
 }
 
-.teamnav-subitem:hover .teamnav-label {
-    transform: translateX(26px);
+.teamnav-subitem:hover .teamnav-icon {
+    opacity: 0.5;
+    transform: translateX(0);
+    transition-delay: 0s;
 }
 
-.teamnav-subitem:hover .teamnav-icon {
-    opacity: 1;
-    transform: translateX(0);
+.teamnav-subitem:hover .teamnav-label {
+    transform: translateX(36px);
+    transition-delay: 0s;
 }
 
 .teamnav-toggle {
@@ -687,9 +683,14 @@ li {
     height: 10px;
     object-fit: contain;
     display: block;
-    transition: transform 0.25s ease;
+    opacity: 0.3;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
+.teamnav-dropdown:hover .teamnav-chevron,
+.teamnav-dropdown.open .teamnav-chevron {
+    opacity: 1;
+}
 
 
 
