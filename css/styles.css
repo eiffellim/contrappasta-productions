@@ -539,21 +539,38 @@ li {
 .mcs-char-lineup {
     width: 100%;
     margin-top: 200px;
-    padding-bottom: 130px;
+    padding-bottom: 140px;
 }
 
 .team-content {
     display: flex;
+    align-items: flex-start;
+}
+
+.teamnav-content {
+    padding-top: 180px;
+}
+
+:root {
+    --navbar-h: 80px;
 }
 
 .team-nav {
     width: 600px;
     flex-shrink: 0;
-    padding: 0px 110px 300px;
-    height: 100vh;
+    position: sticky;
+    top: calc(var(--navbar-h) + (100vh - var(--navbar-h)) / 2);
+    transform: translateY(-50%);
+    max-height: calc(100vh - var(--navbar-h) - 40px);
+    display: flex;
+    flex-direction: column;
+    padding: 0 110px 40px;
     overflow-y: auto;
     overscroll-behavior: contain;
+    scrollbar-width: none;
+    margin-top: 175px;
 }
+
 
 .team-nav::-webkit-scrollbar {
     display: none;
@@ -602,6 +619,8 @@ li {
 }
 
 .teamnav-dropdown {
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -621,7 +640,7 @@ li {
 
 
 .teamnav-dropdown.open .teamnav-sub {
-    max-height: 200px;
+    max-height: 400px;
     opacity: 1;
 }
 
@@ -699,7 +718,6 @@ li {
 }
 
 
-
 .team-categories h4 {
     font-family: "Arial Rounded MT Bold", sans-serif;
     font-size: 16px;
@@ -711,8 +729,6 @@ li {
 .team-panel {
     flex: 1;
     min-width: 0;
-    height: 100vh;
-    overflow-y: auto;
     overscroll-behavior: contain;
     scrollbar-width: none;
 }
@@ -747,7 +763,45 @@ li {
     font-size: 20px;
     font-family: "Arial Rounded MT Bold", sans-serif;
     font-weight: 300;
+    margin-bottom: 20px;
 }
+
+
+/* PROFILES */
+
+.team-profile img {
+    width: 150px;
+    margin: 0;
+}
+
+.profile-details h4 {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.profile-links {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 10px;
+    
+}
+
+.profile-links img {
+    width: 20px;
+}
+
+.team-profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+
+
+
 
 /* FOOTER */
 

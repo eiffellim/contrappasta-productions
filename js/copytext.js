@@ -46,4 +46,7 @@ document.querySelectorAll('.teamnav-dropdown').forEach(dropdown => {
       dropdown.querySelector('.teamnav-toggle')
               .setAttribute('aria-expanded', isOpen);
     });
-  });
+});
+
+
+
