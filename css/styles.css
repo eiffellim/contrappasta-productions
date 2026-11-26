@@ -621,7 +621,7 @@ li {
 
 
 .teamnav-dropdown.open .teamnav-sub {
-    max-height: 140px;
+    max-height: 200px;
     opacity: 1;
 }
 
@@ -725,6 +725,7 @@ li {
     padding: 140px 110px 140px 0;
 }
 
+
 .panel-heading {
     font-size: 30px;
     font-family: "Arial Rounded MT Bold", sans-serif;
@@ -732,7 +733,7 @@ li {
     align-items: center;
     gap: 30px;
     font-size: 32px;
-    margin: 0 110px 0 0;
+    margin: 0 110px 50px 0;
 }
 
 .panel-heading::after {
@@ -742,6 +743,11 @@ li {
     background: #121113;
 }
 
+.team-panel h3 {
+    font-size: 20px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 300;
+}
 
 /* FOOTER */
 
