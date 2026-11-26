@@ -539,18 +539,24 @@ li {
 .mcs-char-lineup {
     width: 100%;
     margin-top: 200px;
+    padding-bottom: 130px;
 }
 
 .team-content {
     display: flex;
-    height: 100vh;
 }
 
 .team-nav {
-    width: 500px;
+    width: 600px;
     flex-shrink: 0;
-    padding: 140px 110px 300px;
+    padding: 0px 110px 300px;
+    height: 100vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
 
+.team-nav::-webkit-scrollbar {
+    display: none;
 }
 
 .teamnav-item {
@@ -561,13 +567,13 @@ li {
     color: #121113;
     text-decoration: none;
     font-family: "Arial Rounded MT Bold", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .teamnav-item .teamnav-icon {
     position: absolute;
     left: 0;
-    width: 26px;
+    width: 24px;
     object-fit: contain;
     margin-bottom: 8px;
     opacity: 0;
@@ -635,14 +641,14 @@ li {
     align-items: center;
     padding: 8px 0 8px 34px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: #121113;
 }
 
 .teamnav-subitem .teamnav-icon {
     position: absolute;
     left: 34px;
-    width: 26px;
+    width: 24px;
     margin-bottom: 8px;
     object-fit: contain;
     opacity: 0;
@@ -700,7 +706,41 @@ li {
 }
 
 
+/* TEAM PANEL */
 
+.team-panel {
+    flex: 1;
+    min-width: 0;
+    height: 100vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
+}
+
+.team-panel::-webkit-scrollbar {
+    display: none;
+}
+
+.team-panel-inner {
+    padding: 140px 110px 140px 0;
+}
+
+.panel-heading {
+    font-size: 30px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 32px;
+    margin: 0 110px 0 0;
+}
+
+.panel-heading::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: #121113;
+}
 
 
 /* FOOTER */
