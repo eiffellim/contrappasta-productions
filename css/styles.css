@@ -790,6 +790,7 @@ li {
     height: 150px;
     margin: 0;
     border-radius: 10px;
+    border: #121113 1.5px solid;
     object-fit: cover;
     flex-shrink: 0;
 }
