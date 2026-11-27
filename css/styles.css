@@ -769,7 +769,7 @@ li {
 }
 
 .team-panel h3 {
-    font-size: 20px;
+    font-size: 25px;
     font-family: "Arial Rounded MT Bold", sans-serif;
     font-weight: 300;
     margin-bottom: 20px;
@@ -797,7 +797,7 @@ li {
 
 
 .profile-details {
-    width: 250px;
+    width: 280px;
 }
 
 .profile-details h4 {
@@ -854,7 +854,7 @@ li {
 
 .licensed-music h4 {
     font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 300;
     margin: 0 0 15px 0;
 }
