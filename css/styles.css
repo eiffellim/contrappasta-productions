@@ -785,12 +785,15 @@ li {
     margin-bottom: 85px;
 }
 
-.team-profile img {
+.profile-img {
     width: 150px;
+    height: 150px;
     margin: 0;
+    border-radius: 10px;
     object-fit: cover;
     flex-shrink: 0;
 }
+
 
 .profile-details {
     width: 250px;
@@ -842,7 +845,7 @@ li {
 
 .profile-links img.mic-icon {
     width: auto;
-    height: 24px;
+    height: 23px;
     flex-shrink: 0;
 }
 
